@@ -31,5 +31,3 @@ Some user/profile/preferences routes are stubs. OAuth token handling includes
 the original demo query-string redirect and should be redesigned before a public
 deployment. A source upload is not a claim of production authentication security.
 Dependencies and live Spotify/Ollama flows were not exercised during recovery.
-
-See `RECOVERY_NOTES.md` for snapshot provenance.

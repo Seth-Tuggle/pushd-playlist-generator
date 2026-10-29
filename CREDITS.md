@@ -1,14 +1,9 @@
-# Team credits
+# Credits
 
-Push'd was collaborative CS370 coursework with AI-assisted base code. No team
-member is assigned exclusive ownership of the shared implementation.
+CS370 team project built collaboratively with AI-assisted base code.
 
-Seth Tuggle managed the Spotify developer API connection and contributed to
-the rest of the application. The recovered team record lists the GitLab handles
-`hrbrown1`, `stuggle`, `dvaccianna`, `uttiudy`, and `Paul-Tucker`. The local code
-history also records Damar Vaccianna, Paul Tucker / Paul-Tucker,
-Seth Tuggle / stuggleRadford, and tlewis32-ru (course/starter history).
-These existing identifiers are retained for attribution, without private email addresses.
+Team: hrbrown1, Seth Tuggle (stuggle), Damar Vaccianna (dvaccianna), uttiudy, and Paul Tucker (Paul-Tucker).
 
-React, Express, Spotify services, Ollama, PostgreSQL, and other dependencies
-retain their respective authorship and licenses.
+Seth managed the Spotify API connection and contributed to shared development. Course/starter contributions: tlewis32-ru.
+
+Third-party credits and licenses are retained.
