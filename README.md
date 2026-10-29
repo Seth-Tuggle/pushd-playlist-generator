@@ -1,30 +1,31 @@
 # Push'd AI Playlist Generator
 
-I worked on Push'd for CS370. The app takes a playlist theme, asks a local Ollama
-model for song suggestions, finds those songs on Spotify, and creates a playlist.
-It brings together a React client, an Express server, Spotify OAuth, and a
-PostgreSQL database.
+I worked on Push'd for CS370. The project combines a React client, Express server,
+Spotify OAuth, PostgreSQL, and a local Ollama model. Its goal was to turn a written
+playlist theme into song suggestions, find those songs on Spotify, and create a
+playlist.
 
-## Running locally
+## Historical coursework
 
-1. Install PostgreSQL, Node, and Ollama. Set up a local database using `db/schema.sql`.
-2. Copy `server/.env.example` to `server/.env` and fill in your PostgreSQL and
-   Spotify developer settings. Set a local JWT secret if you use that code path.
-3. Add `http://localhost:3001/api/auth/callback` as the callback URL in your
-   Spotify application settings so it matches the server.
-4. Run `npm ci` in both `server` and `client`. Use `npm install` instead if you
-   need to rebuild dependency resolution. Run `ollama pull llama3` and start Ollama.
-5. Run `node index.js` from `server`, then `npm start` from `client`.
+I'm keeping this repository as a description of the class project and an archive
+of its main code. I'm not maintaining it as a standalone service. It depended on
+the development configuration, Spotify application access, database, and local
+model setup used for class. Those services, dependencies, and API requirements
+may now be outdated or deprecated.
 
-The server uses the local `llama3` model, even though some filenames still mention
-DeepSeek. You'll need your own Spotify application and authorized test users.
+## Main code
 
-## What's unfinished
+- `client/`: the React interface and playlist screens.
+- `server/`: Express routes, Spotify authorization, and playlist creation.
+- `server/ai/`: the local Ollama integration.
+- `db/schema.sql`: the database schema used by the project.
 
-Some profile and preferences routes are still stubs. The OAuth demo passes tokens
-through a query-string redirect; that flow needs to be changed before deploying
-the app publicly. A working setup also depends on your Spotify and Ollama
-configuration.
+The selected server code uses `llama3`, despite some older filenames mentioning
+DeepSeek. Environment examples are included for reference, without credentials.
+This version retains unfinished profile routes, a playlist request-path mismatch,
+and demonstration authentication/token handling. It isn't a verified local setup
+or a live service, and I'm preserving those limitations rather than updating the
+application.
 
 ## Ownership
 
